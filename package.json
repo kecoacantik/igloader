@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
+    "dev": "TAILWIND_DISABLE_WASM=true next dev --turbopack",
+    "build": "TAILWIND_DISABLE_WASM=true next build",
     "build:locales": "python scripts/build_locales.py",
     "start": "next start",
     "lint": "next lint"
